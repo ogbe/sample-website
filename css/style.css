@@ -1,0 +1,111 @@
+body {
+    background-color: #f4f4f4;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    line-height: 1.6em;
+    font-size: 16px;
+}
+
+h1, h2, li {
+    text-transform: capitalize;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+#main-header {
+    background: coral;
+    color: #fff;
+}
+
+#navbar {
+    float: right;
+    margin-top: -70px;
+    margin-right: 30px;
+}
+
+#navbar li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: #cccccc;
+}
+
+#showcase {
+    background: url("../images/bcg.png") center center no-repeat;
+    min-height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#showcase h1 {
+    color: #fffff9;
+    font-size: 50px;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+
+#main {
+    width: 70%;
+    float: left;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    width: 30%;
+    float: left;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media(max-width: 700px) {
+    #main-header {
+        min-height: 100px;
+    }
+    
+    #navbar {
+        float: none;
+    }
+}
+
+@media(max-width: 600px) {
+    #navbar {
+        margin-top: -65px;
+    }
+
+    #main {
+        float: none;
+        width: 100%;
+        padding: inherit;
+    }
+    
+    #sidebar {
+        float: none;
+        width: 100%;
+    }
+}
